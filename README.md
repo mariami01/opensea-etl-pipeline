@@ -16,23 +16,25 @@ This project is an **ETL (Extract, Transform, Load) pipeline** that extracts **N
 ```sh
 git clone https://github.com/mariami01/opensea-etl-pipeline.git
 cd opensea-etl-pipeline
-
+```
 ### **2️⃣ Set Up a Virtual Environment**
 ```sh
 python -m venv venv
 source venv/bin/activate  # On Mac/Linux
 venv\Scripts\activate     # On Windows
-
+```
 ### **3️⃣ Install Dependencies**
 ```sh
 pip install -r requirements.txt
-
+```
 ### **4️⃣ Set Up Your OpenSea API Key**
-1. Request an API key from OpenSea: OpenSea API Keys
-2. Create a .env file in the project root:
+1. Request an API key from OpenSea
+2. Create a ```.env``` file in the project root:
 ```sh
 OPENSEA_API_KEY=your_api_key_here
-
+```
 ### **Running the ETL Pipeline**
 To run the pipeline and fetch OpenSea collections, execute:
+```sh
 python main.py
+```
